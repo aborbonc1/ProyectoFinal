@@ -5,7 +5,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: black
+	color: black;
 }
 
 header {
@@ -23,42 +23,62 @@ header {
 }
 
 .logo img {
-	height: 50px;
+	height: 60px;
 	margin-left: 10px;
-	border-radius: 50px;
+	border-radius: 30px;
 }
 
 nav a {
 	font-weight: 600;
 	padding-right: 10px;
+	margin-right: 10px;
 }
 
 nav a:hover {
 	color: red;
 }
 
-.div-uno {
-	background-color: gold;
-	height: 70vh;
-	display: flex;
-	justify-content: center;
-}
-
-.flex-container {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.flex-box {
-	width: 450px;
-	height: 200px;
-	background: gold;
-	color: black;
-	font-size: 25px;
+.container-info{
+	background-image: url(img-uno.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
-	margin: 5px;
+	color: black;
+	height: 350px;
+	padding: 80px;
+	background-color:white;
+}
+
+h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.flex-container{
+	background-color: black;
+	display: flex;
+	flex-direction:row;
+	height: 400px;
+	justify-content: space-around;
+}
+
+.flex-box{
+	background-color: white;
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+	text-align: center;
+}
+
+.img-container{
+	display: flex;
+	margin-left: 50px;
+	margin-top: 40px;
+	width: 200px;
+	height: 200;
 }
 
 /*carrusel*/
@@ -184,3 +204,4 @@ img {
 		object-position: center center;
 	}
 }
+

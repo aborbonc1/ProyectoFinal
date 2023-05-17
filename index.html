@@ -23,35 +23,35 @@
             <a href="#">Contáctenos</a>
         </nav>
     </header>
-    <hr><!--SE DEBEN ELIMINAR DESPUES DE DAR ESTILO-->
-
-    <!--Inicio del cuerpo de la pagina-->
+    <!--Cuerpo de pagina-->
     <main>
-        <!--Inicio-->
-        <div class="div-uno">
+        <div class="container-info">
             <h1>Fundación Tierra de Animales</h1>
+            <p>Una segunda oportunidad de vida para los animales en riesgo</p>
         </div>
-        <hr><!--SE DEBEN ELIMINAR DESPUES DE DAR ESTILO-->
-        
-        <!--Servicios-->
-        <div class="flex-container">  
-            <div class="flex-box">
-                <p>Servicio 1</p>
+
+        <h2>Nuestros servicios</h2>
+
+        <div class="flex-container">
+           <div class="flex-box">
+                <h3>Educación</h3>
+                <p>Nos enfocamos en educar a la población en temas de protección animal</p>
+                <img class="img-container " src="./images/perros2.jpg" alt="">
             </div>
             <div class="flex-box">
-                <p>Servicio 2</p>
+                <h3>Rescate</h3>
+                <p>Nuestra labor está enfocada en rescatar perros y gatos en riesgo</p>
+                <img class="img-container " src="./images/perros2.jpg" alt="">
             </div>
             <div class="flex-box">
-                <p>Servicio 3</p>
+                <h3>Adopción</h3>
+                <p>Ofrecemos en adopción responsable a nuestros rescatados</p>
+                <img class="img-container " src="./images/perros2.jpg" alt="">
             </div>
-            <div class="flex-box">
-                <p>Servicio 4</p>
-            </div>      
         </div>
-        <hr><!--SE DEBEN ELIMINAR DESPUES DE DAR ESTILO-->
 
         <!--Carrusel-->
-        <h2 style="text-align:center">Algunos de los rescatados</h2>
+        <h2>Algunos de los rescatados</h2>
         <div class="container">
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
@@ -106,33 +106,15 @@
             </div>
         </div>
 
-    <!--Formulario-->
-        <form action=servidor-ejemplo.com">
-            <fieldset>
-                <legend>Contacto</legend>
-                <div class="form-control">
-                    <label for="name">Nombre</label>
-                    <input type="name" id="name" placeholder="Introduce tu nombre" required />
-                </div>
+        <!--Formulario-->
+        <h1>FORMULARIO</h1>
 
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Introduce tu Email" required />
-                </div>
-
-                <div class="form-control">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" cols="30" rows="10" placeholder="Introduce tu mensaje" required></textarea>
-                </div>
-                <input type="submit" value="Enviar" class="submit-btn" />
-            </fieldset>
-        </form>
     </main>
-    <!--Fin del cuerpo de la pagina-->
-    <!--Inicio de contacto-->
+
+    <!--Contacto-->
     <footer>
     </footer>
-    <!--Fin de contacto-->
+
     <script>
         let slideIndex = 1;
 
@@ -166,6 +148,7 @@
         }
 
     </script>
+
 </body>
 
 </html>
