@@ -8,6 +8,7 @@
     <title>Fundación Tierra de Animales</title>
     <!--Estilos-->
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,126 +30,74 @@
             <h1>Fundación Tierra de Animales</h1>
             <p>Una segunda oportunidad de vida para los animales en riesgo</p>
         </div>
-
         <h2>Nuestros servicios</h2>
-
         <div class="flex-container">
-           <div class="flex-box">
+            <div class="flex-box">
                 <h3>Educación</h3>
                 <p>Nos enfocamos en educar a la población en temas de protección animal</p>
-                <img class="img-container " src="./images/perros2.jpg" alt="">
+                <img class="img-container " src="./images/Educacion.jpg" alt="">
             </div>
             <div class="flex-box">
                 <h3>Rescate</h3>
                 <p>Nuestra labor está enfocada en rescatar perros y gatos en riesgo</p>
-                <img class="img-container " src="./images/perros2.jpg" alt="">
+                <img class="img-container " src="./images/Rescate.jpg" alt="">
             </div>
             <div class="flex-box">
                 <h3>Adopción</h3>
                 <p>Ofrecemos en adopción responsable a nuestros rescatados</p>
-                <img class="img-container " src="./images/perros2.jpg" alt="">
+                <img class="img-container " src="./images/Adopcion.jpg" alt="">
             </div>
         </div>
-
         <!--Carrusel-->
         <h2>Algunos de los rescatados</h2>
         <div class="container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="images/perros2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="images/perros2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="images/perros2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="images/perros2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="images/perros2.jpg" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="The Woods">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(2)"
-                        alt="Cinque Terre">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="Northern Lights">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="Northern Lights">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="images/perros2.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="Northern Lights">
-                </div>
-            </div>
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="./images/perros2.jpg" />
+                </li>
+                <li id="slide2">
+                    <img src="./images/perros2.jpg" />
+                </li>
+                <li id="slide2">
+                    <img src="./images/perros2.jpg" />
+                </li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+            </ul>
         </div>
-
         <!--Formulario-->
-        <h1>FORMULARIO</h1>
-
+        <h2>Contáctenos</h2>
+        <form id="form" class="topBefore">
+            <input id="name" type="text" placeholder="Nombre completo">
+            <input id="email" type="text" placeholder="Correo">
+            <textarea id="message" type="text" placeholder="Mensaje"></textarea>
+            <input id="submit" type="submit" value="Enviar">
+        </form>
     </main>
-
     <!--Contacto-->
-    <footer>
-    </footer>
-
-    <script>
-        let slideIndex = 1;
-
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-
-            if (n < 1) { slideIndex = slides.length }
-
-            for (i = 0; i < slides.length; i++) {
-
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-
-    </script>
-
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <p>Proyecto Final | Curos HTML&CSS</p>
+                    <p>Rocket Girls</p>
+                </p>
+                <p>Adriana Borbon Carvajal &copy; 2023</p>
+            </div>
+        </footer>
 </body>
 
 </html>
