@@ -39,16 +39,63 @@ nav a:hover {
 }
 
 .container-info{
-	background-image: url(img-uno.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	color: black;
-	height: 350px;
-	padding: 80px;
+	color:  rgb(214, 3, 3);
+	height: 500px;
+	padding: 30px;
 	background-color:white;
 }
+
+.container-info p {
+  color: black;
+}
+
+/*index2*/
+
+.container-info2{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color:  rgb(214, 3, 3);
+	height: 800px;
+	padding: 30px;
+	background-color:white;
+}
+
+.container-info2 p {
+  color: black;
+  text-align: justify;
+	font-weight: bold;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.container-info3{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color:  rgb(214, 3, 3);
+	height: 800px;
+	padding: 30px;
+	background-color:white;
+}
+
+.container-info3 p {
+  color: black;
+  text-align: center;
+	font-weight: bold;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+
 
 h2{
 	text-align: center;
@@ -176,8 +223,8 @@ input {
 }
 
 input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: black;
+  color: white;
 }
 
 textarea {
@@ -203,7 +250,7 @@ textarea {
 }
 
 textarea:hover {
-  background: #b3aca7;
+  background: black;
   color: #e2dedb;
 }
 
@@ -225,7 +272,8 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: black;
+  color:  #e2dedb;
+  background-color:  rgb(214, 3, 3);
   font-weight: bold;
 }
 
@@ -241,7 +289,7 @@ textarea:hover {
 }
 
 .footer-distributed .footer-left p {
-  color: #8f9296;
+  color: white;
   font-size: 14px;
   margin: 0;
 }
